@@ -1,1 +1,1 @@
-# LCCC Ideation Center WordPress Theme
+# LCCC Ideation Center Dev WordPress Theme
