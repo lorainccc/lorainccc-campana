@@ -25,13 +25,9 @@ get_header();
 			<?php 
 			
 			while (have_posts()) : the_post();
-            
-            switch_to_blog($post->blog-id);
 			
 				get_template_part( 'template-parts/loop', 'search');
 				
-			restore_current_blog();
-            
             endwhile;
 				
 			?>
