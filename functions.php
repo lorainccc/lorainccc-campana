@@ -76,7 +76,9 @@ require get_stylesheet_directory() . '/functions/menu.php';
 require get_stylesheet_directory() . '/functions/sidebar.php';
 
 
+/* Adding Editor Style Support */
 
+add_editor_style( 'css/editor-style.css' );
 
 
 
