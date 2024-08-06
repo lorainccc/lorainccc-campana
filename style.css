@@ -131,7 +131,7 @@ hr.shadow-divider,hr.shadow-divider::before{background:radial-gradient(ellipse a
 .sidebar-cta,.sidebar-cta p{font-size:1rem}.blog-archive-item h2,.events-archive-item h2{font-size:1.8125rem;margin-bottom:0}
 .blog-archive-item h2 a,.events-archive-item h2 a{color:#002346}.blog-archive-item:not(:last-child),.events-archive-item:not(:last-child){padding-bottom:1.5rem;border-bottom:1px solid #cacaca}
 .blog-archive-item:not(:first-child),.events-archive-item:not(:first-child){padding-top:1.5rem}
-.post-taxonomies,.event-taxonomy-links{margin-bottom:.5rem}.post-taxonomies a,.event-taxonomy-links a{font-weight:600;color:#873916}
+.post-taxonomies,.event-taxonomy-links{margin: 10px 0;}.post-taxonomies a,.event-taxonomy-links a{font-weight:600;color:#873916}
 .post-taxonomies a:hover,.event-taxonomy-links a:hover{text-decoration:underline}
 .blog-single-inner{padding-top:2rem;-webkit-box-sizing:border-box;box-sizing:border-box}
 .blog-single-inner h1{color:#002346;line-height:100%}.blog-single-inner .wp-post-image{margin:2rem 0}
