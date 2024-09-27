@@ -14,8 +14,4 @@
         $('.off-canvas > ul#menu-main-nav').removeAttr( "role" );
         $('.off-canvas > ul#menu-main-nav > li').removeAttr( "role" );**/
 	}
-
-    $('ul.accordion').removeAttr( "role" );
-    $('a.accordion-title').removeAttr( "role" );
-    
-}); 
+ }); 
