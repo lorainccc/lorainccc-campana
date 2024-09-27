@@ -337,7 +337,7 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 							<h1>Today</h1>
 			</div>
 						<div id="all-lccc-event-listings" class="small-12 medium-12 large-12 columns show-for-small-only">
-								<div class="small-12 columns show-for-small-only nopadding" style="background:#003B76;">
+								<div class="small-12 columns show-for-small-only nopadding" style="background:#b44d1d;">
 											<h2 style=" text-align:center;margin-top:0.5rem;color:#ffffff;">All LCCC Events</h2>
 								</div>
 			<?php
