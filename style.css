@@ -60,6 +60,7 @@ Section 2: Content
 */h1,h2,h3,h4,h5{font-family:"Raleway",sans-serif;font-weight:700;line-height:110%}
 h2{font-size:1.9375rem;color:#b44d1d}h3{font-size:1.5rem;color:#0055a5}h4{font-size:1.25rem;color:#b44d1d}
 p{font-size:1.125rem;font-family:"Open Sans",sans-serif}.button{font-family:"Raleway",sans-serif;font-size:1rem;font-weight:700}
+a{color:#0055a4;font-weight:700;}a:hover{text-decoration:underline;}
 .button:not(.hollow){background-color:#b44d1d;-webkit-transition:background-color .25s ease-out,color .25s ease-out;transition:background-color .25s ease-out,color .25s ease-out}
 .button:not(.hollow):hover{background-color:#0055a4}.read-more{font-weight:700;color:#0055a4}
 hr.shadow-divider{border:0;height:1px;position:relative;margin:4rem auto;width:100%;max-width:81.25rem;color:#fefefe}
