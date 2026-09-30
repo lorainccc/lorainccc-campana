@@ -29,7 +29,7 @@ Template Name: Audience
 		
 		get_template_part( 'template-parts/content', 'shadow-divider' );
 		
-		get_template_part( 'template-parts/content', 'tour' );
+		//get_template_part( 'template-parts/content', 'tour' );
 		
 		?>
 	

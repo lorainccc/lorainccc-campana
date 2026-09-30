@@ -28,11 +28,14 @@ function lorainccc_subsite_foundation_scripts() {
 
 	wp_enqueue_script( 'foundation-init-js', get_template_directory_uri() . '/foundation.js', array( 'jquery' ), '1', true );
 
+	wp_enqueue_script( 'lc-campus-status-front', get_stylesheet_directory_uri() . '/js/lc-campus-status-front.js', array( 'jquery' ), '1', false );
+
 	wp_enqueue_script( 'lorainccc_subsite-function-script', get_stylesheet_directory_uri() . '/js/functions.js', array( 'jquery' ), '20150330', true );
 
 	//Adds Google Analytics, Google Tag, Hotjar and Eloqua to header
 	wp_enqueue_script( 'lc-eloqua-scripts', get_stylesheet_directory_uri() . '/js/lc-eloqua.js', array(), '20180828', false);
-	wp_enqueue_script( 'lc-google-analytics-scripts', get_stylesheet_directory_uri() . '/js/lc-google-analytics.js', array(), '20180828', false);
+	wp_enqueue_script( 'lc-google-analytic-parent-async', 'https://www.googletagmanager.com/gtag/js?id=G-Z27HB3ECDG', array(), '20221117', false); 
+	wp_enqueue_script( 'lc-google-analytics-scripts', get_stylesheet_directory_uri() . '/js/lc-google-analytics.js', array( 'lc-google-analytic-parent-async' ), '20180828', false);
 	wp_enqueue_script( 'lc-google-tag-scripts', get_stylesheet_directory_uri() . '/js/lc-google-tag.js', array(), '20180828', false);
 	wp_enqueue_script( 'lc-hotjar-scripts', get_stylesheet_directory_uri() . '/js/lc-hotjar.js', array(), '20180828', false);
 	wp_enqueue_script( 'lc-siteimprove-scripts', get_stylesheet_directory_uri() . '/js/lc-siteimprove.js', array(), '20180828', false);
@@ -53,6 +56,12 @@ function lorainccc_subsite_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'lorainccc_subsite_scripts', 99 );
+
+function lc_load_scripts_last() {
+	//Use jQuery to remove attributes and roles for accessibility
+	wp_enqueue_script( 'lc-offcanvas-fixes', get_stylesheet_directory_uri() . '/js/lc-offcanvas.js', array( 'jquery' ), '20241119', true);
+}
+add_action( 'wp_enqueue_scripts', 'lc_load_scripts_last', 9999 );
 
 function sticky_shrinking_header() {
 ?>

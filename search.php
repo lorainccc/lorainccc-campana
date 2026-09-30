@@ -26,7 +26,7 @@ get_header();
 			
 			while (have_posts()) : the_post();
             
-            switch_to_blog($post->blog-id);
+            switch_to_blog($post->blog->id);
 			
 				get_template_part( 'template-parts/loop', 'search');
 				
