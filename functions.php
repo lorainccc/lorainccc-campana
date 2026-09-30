@@ -366,4 +366,15 @@ function offcanvas_tab_index() {
 }
 add_action('wp_footer', 'offcanvas_tab_index', 200 );
 
+/** Disable Caching of RankMath Sitemaps
+*
+*	RankMath SiteMap files are being cached in transients in the WordPress Database
+*	adding the filter below removes the files from cache.
+*
+*	Added by JAQ 2/2026
+*	https://rankmath.com/kb/exclude-sitemaps-from-caching/
+*/
+
+add_filter( 'rank_math/sitemap/enable_caching', '__return_false');
+
 ?>
