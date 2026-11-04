@@ -19,9 +19,9 @@
 				</div>
 			
 				<div class="float-right">
-				
+				<nav id="lc_top_nav" role="region" aria-label="top menu">
 					<?php campana_top_nav(); ?>
-					
+				</nav>
 				</div>
 				
 			</div>
